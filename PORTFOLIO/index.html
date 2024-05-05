@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/e872ba44e8.js" crossorigin="anonymous"></script>
+  <title>Pratik's Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: black;
+      color: white;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      height: 80px;
+      background-color: rgb(38, 35, 35);
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: space-around;
+    }
+
+    nav ul li {
+      list-style: none;
+      margin: 0px 23px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+    }
+
+    nav ul li a:hover {
+      color: rgb(142, 136, 136);
+      font-size: 1.01rem;
+    }
+
+    .left {
+      font-size: 1.5rem;
+    }
+
+    .section-one {
+      display: flex;
+      justify-content: space-around;
+      margin: 120px 0;
+      align-items: center;
+
+    }
+
+    .section-one>div {
+      width: 30%;
+    }
+
+    .section-one-left {
+      font-size: 3rem;
+    }
+
+    .section-one-right img {
+
+      border-radius: 50%;
+    }
+
+    .section-one-right img:hover {
+
+      cursor: move;
+
+    }
+
+    .name_color {
+      color: rgb(148, 62, 229);
+    }
+
+    #element {
+      color: rgb(148, 62, 229);
+    }
+
+    footer {
+      background-color: rgb(34, 31, 31);
+      /* height:230px; */
+
+    }
+
+    .footer-div {
+
+      display: flex;
+      padding: 50px 30px;
+      justify-content: space-evenly;
+    }
+
+    .footer-div-two-ul {
+      list-style: none;
+    }
+
+    .footer-div-two-ul li a {
+      color: white;
+      text-decoration: none;
+    }
+
+    .footer-div-two-ul li a:hover {
+      color: rgb(109, 107, 107);
+      font-size: 1.01rem;
+    }
+
+    .footer-div>div {
+      width: 280px;
+    }
+
+    .quick1 {
+      color: white;
+      font-size: 20px;
+    }
+
+    .quick2 {
+      color: white;
+      font-size: 18px;
+    }
+
+    .hm {
+      color: white;
+
+    }
+
+    footer .footer-div-second {
+      text-align: center;
+      color: rgb(131, 120, 120);
+      padding-bottom: 30px;
+    }
+
+    .buttons {
+      padding: 30px;
+    }
+
+    .btn {
+      background-color: black;
+      color: white;
+      border: 2px solid white;
+      padding: 8px;
+      border-radius: 20px;
+      font: bold;
+      /* font-size: 15px; */
+      margin-right: 10px;
+    }
+
+    .btn:hover {
+      cursor: pointer;
+      transition: 0.5s;
+      box-shadow: 0px 0px 10px rgb(148, 62, 229);
+    }
+
+    .section-two {
+      /* max-width:130vh;  */
+      margin: auto;
+    }
+
+    .section-two-heading {
+      text-align: center;
+    }
+
+    .section-one-hr {
+
+      margin: 60px 84px;
+      border: 0;
+      height: 1.2px;
+      background: #9c97f1;
+    }
+
+    .section-two-div {
+      margin: 30px 30px;
+    }
+
+    .section-two-button {
+      padding: 8px;
+      border-radius: 20px;
+      margin-right: 20px;
+      width: 162px;
+      font-size: 15px;
+      margin-left: 10px;
+      background-color: rgb(148, 62, 229);
+      border: none;
+      color: white;
+    }
+
+    .section-two-button:hover {
+      box-shadow: 3px 3px 1px white;
+      background-color: black;
+      transition: 0.5s;
+    }
+
+    .section-three-div {
+      display: flex;
+      justify-content: space-around;
+      margin: 30px 0;
+    }
+
+    .section-three-left {
+      height: 120px;
+      width: 500px;
+      background-color: rgb(38, 35, 35);
+      padding: 10px;
+      border-radius: 15px;
+      font-size: 20px;
+      padding-top: 20px;
+      margin-left: 80px;
+    }
+
+    .section-three-right {
+      height: 120px;
+      width: 500px;
+      background-color: rgb(38, 35, 35);
+      padding: 10px;
+      border-radius: 15px;
+      font-size: 20px;
+      padding-top: 20px;
+    }
+
+    .section-four-div {
+      display: flex;
+      justify-content: space-around;
+    }
+
+    .name {
+      padding: 7px;
+      margin: 20px;
+      width: 400px;
+      border-radius: 20px;
+      border: none;
+    }
+
+    .name:hover {
+      border: 1px solid black;
+      box-shadow: 2px 2px 3px purple;
+    }
+
+    .form-head {
+      font-size: 20px;
+    }
+
+    .contact {
+      background-color: rgb(38, 35, 35);
+      padding: 20px;
+      border-radius: 10px;
+      margin-top: 40px;
+      margin-bottom: 40px;
+      height: 350px;
+    }
+
+    .form-btn {
+      display: block;
+      margin: auto;
+      justify-content: center;
+      padding: 10px;
+      border-radius: 20px;
+      border: none;
+      font-size: 15px;
+      width: 100px;
+
+    }
+
+    .form-btn:hover {
+      box-shadow: 3px 3px 1px white;
+      background-color: black;
+      transition: 0.5s;
+      color: white;
+    }
+
+    .msg {
+      margin-bottom: 40px;
+    }
+
+    .resume {
+      text-decoration: none;
+      color: white;
+    }
+
+    .section-four-heading {
+      text-align: center;
+    }
+
+    .projects {
+      background-color: rgb(38, 35, 35);
+      padding-left: 80px;
+      padding-right: 80px;
+      padding-top: 20px;
+      padding-bottom: 13px;
+      border-radius: 10px;
+      margin-top: 40px;
+      margin-bottom: 40px;
+      height: 350px;
+
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="left">Pratiks's Portfolio </div>
+      <div class="right">
+        <ul>
+          <li><a href=""> Home</a></li>
+          <li><a href="">About</a></li>
+          <li><a href="">Project</a></li>
+          <li><a href="">Contact Menu</a></li>
+
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main>
+
+    <section class="section-one">
+      <div class="section-one-left">
+        Hii , My name is <span class="name_color">Pratik </span>
+        <div>and I am a passionate Developer</div>
+        <span id="element"></span>
+        <div class="buttons">
+          <button class="btn"><a href="./pranali_resume.docx" class="resume"> Download Resume </a></button>
+          <button class="btn"> <a href="https://github.com/pratik047" class="resume">Github</a></button>
+        </div>
+      </div>
+      <div class="section-one-right">
+        <img src="./pratik_img.jpg" style="width:80%">
+      </div>
+
+    </section>
+    <hr class="section-one-hr">
+    <section class="section-two">
+      <h1 class="section-two-heading">Skills</h1>
+      <div class="section-two-div">
+        <button class="section-two-button">HTML</button>
+        <button class="section-two-button">CSS</button>
+        <button class="section-two-button">Javascript</button>
+        <button class="section-two-button">Python Programming</button>
+        <button class="section-two-button">Django Framework</button>
+        <button class="section-two-button">Laravel Framework</button>
+        <button class="section-two-button">PHP</button>
+        <button class="section-two-button">C++ Programming</button>
+
+        <button class="section-two-button">Data Science</button>
+      </div>
+    </section>
+    <hr class="section-one-hr">
+    <section class="section-three">
+      <h1 class="section-two-heading">Education</h1>
+      <div class="section-three-div">
+        <div class="section-three-left">
+          I am currently pusuing my <b>Bachelor of Engineering B.E.</b> in <b>Information Technology</b> From
+          <b>Savitribai Phule Pune University </b>in <b>Trinity College Of Engineering And Research</b> Pune <br>- Nov
+          2022 - Aug 2025
+        </div>
+        <div class="section-three-right">
+          <b>Diploma in Computer Technology </b>in Sharad Institute of Technology, Polytechnic, Yadrav ,
+          Ichalkaranji<br> - Aug 2019 - May 2022.
+        </div>
+        <div>
+
+        </div>
+      </div>
+    </section>
+    <hr class="section-one-hr">
+    <section class="section-four">
+      <h1 class="section-four-heading">Information</h1>
+      <div class="section-four-div">
+        <div class="contact">
+          <form class="form">
+            <h3 style="text-align: center;">Contact Me !!</h3>
+            <span class="form-head"> Name : </span><input type="text" placeholder="Enter a Name" id="Name" name="Name"
+              class="name"><br>
+            <span class="form-head"> Mobile :</span> <input type="number" placeholder="Enter Mobile" id="mobile"
+              name="mobile" class="name"><br>
+            <span class="form-head"> Email :</span> <input type="text" placeholder="Enter a Mail" id="mail" name="mail"
+              class="name"><br>
+            <span class="form-head"> Message :</span> <input type="text" placeholder="Your Message" id="Message"
+              name="Message" class="name msg"><br>
+            <button id="submit" name="Submit" class="form-btn"> Submit </button>
+          </form>
+        </div>
+        <div class="projects">
+          <h3 style="margin-bottom: 10px; text-align: center;">Project</h3>
+          <img src="./project.png" width="350px" height="120px" style="margin-bottom:20px">
+          <div>
+            <span style=" font-size: 20px; margin-top: 10px;"><b style="text-align: center;margin-top: 20px;"><u>Dance
+                  Academy</u></b></span><br>
+          </div>
+          <div style="padding:20px; margin-left: 20px;">
+            <button class="btn"><a href="https://dance-project-icp.netlify.app/" class="resume" style="margin: 20px;">
+                Visit Site</a></button>
+            <button class="btn"> <a href="https://github.com/pranali-dalvi-8/dance-icp-project" class="resume">Source
+                Code</a></button>
+          </div>
+          <div>
+            <span style=" font-size: 20px; margin-top: 10px;"><b style="text-align: center;margin-top: 20px;"><u>Plant
+                  Paradise</u></b></span><br>
+          </div>
+          <div style="padding:20px; margin-left: 20px;">
+            <button class="btn"><a href="https://plantparadise.netlify.app/" class="resume" style="margin: 20px;"> Visit
+                Site</a></button>
+            <button class="btn"> <a href="https://github.com/pranali-dalvi-8/plant-paradise-icp3-group-b"
+                class="resume">Source Code</a></button>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+  <hr>
+  <footer>
+    <div class="footer-div">
+      <div class="footer-div-one">
+        <h3>Pratiks's Portfolio</h3>
+      </div>
+      <div class="footer-div-two">
+        <ul class="footer-div-two-ul">
+          <li><a href=""> Home</a></li><br>
+          <li><a href="">About</a></li><br>
+          <li><a href="">Project</a></li><br>
+          <li><a href="">Contact Menu</a></li><br>
+        </ul>
+      </div>
+      <div class="footer-div-three">
+        <span class="quick1"><b>Quick Contacts</b></span><br><br>
+        <span class="quick2"><a href="callto:95292 21141"> <i class="fa-solid fa-phone"
+              style="color:green"></a></i>&nbsp;&nbsp;+91 7499753956</span><br><br>
+        <span class="quick2"><a href="mailto:dpratik7499@gmail.com? subject=subject text"><i
+              class="fa-solid fa-envelope" style="color:red;"></a></i>&nbsp;&nbsp;dpratik7499@gmail.com</span><br><br>
+        <span class="quick2"><a href=""> <i class="fa-sharp fa-solid fa-house"
+              style="color:blue "></a></i>&nbsp;&nbsp;Sangli, Maharastra ,India</span><br><br>
+      </div>
+    </div>
+
+    </div>
+    <div class="footer-div-second">
+      copyright &#169; Pratikssportfolio.com | All rights reserved
+    </div>
+  </footer>
+  <hr>
+
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script>
+    var typed = new Typed('#element', {
+      strings: ['Data Scientist', 'Python Developer', 'C++ Developer', 'Web Designer', 'Web Developer'],
+      typeSpeed: 50,
+    });
+  </script>
+
+</body>
+
+</html>
